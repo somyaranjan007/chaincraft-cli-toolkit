@@ -1,22 +1,28 @@
 {
-  "name": "chaincraft",
+  "name": "@somyaranjankhatua/chaincraft",
   "type": "module",
   "version": "1.0.0",
   "description": "A comprehensive testing framework designed for blockchain developers to automate the setup, configuration, and testing of smart contracts across multiple blockchain networks like Ethereum, Solana, and Cosmos.",
-  "main": "bin/index.ts",
-  "bin": {},
+  "main": "dist/bin/index.js",
+  "bin": {
+    "chaincraft": "dist/bin/index.js"
+  },
   "scripts": {
     "start": "npx ts-node bin/index.ts",
     "dev": "tsx bin/index.ts create",
-    "test": "jest"
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.4.1",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
     "fs-extra": "^11.3.0",
-    "inquirer": "^12.3.3"
+    "inquirer": "^12.3.3",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
