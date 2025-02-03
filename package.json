@@ -1,7 +1,7 @@
 {
   "name": "@somyaranjankhatua/chaincraft",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive testing framework designed for blockchain developers to automate the setup, configuration, and testing of smart contracts across multiple blockchain networks like Ethereum, Solana, and Cosmos.",
   "main": "dist/bin/index.js",
   "bin": {
